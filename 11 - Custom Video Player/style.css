@@ -27,10 +27,10 @@ body {
   overflow: hidden;
 }
 
-/* This css is only applied when fullscreen is active. */
+/* This css is only applied when fullscreen is active.*/
 .player:fullscreen {
   max-width: none;
-  width: 100%;
+  width: 50%;
 }
 
 .player:-webkit-full-screen {
