@@ -48,6 +48,8 @@
     const itemsList = document.querySelector('.plates');
     const items = JSON.parse(localStorage.getItem('items')) || [];
     const clearAll = addItems.querySelector('.clear-all');
+    const uncheckAll = addItems.querySelector('.uncheck-all');
+    const checkAll = addItems.querySelector('.check-all');
 
     function addItem(e) {
       e.preventDefault();
@@ -74,6 +76,7 @@
     }
 
     function toggleDone(e) {
+      console.log(e.target);
       if (!e.target.matches('input')) return;
       const el = e.target;
       const index = el.dataset.index;
@@ -88,11 +91,20 @@
       populateList(items, itemsList);
     }
 
+    function uncheckList() {
+      items.forEach(function(i) {
+        i.done = false;
+        localStorage.setItem('items', JSON.stringify(items));
+        populateList(items, itemsList);
+      });
+    }
+
     addItems.addEventListener('submit', addItem);
     itemsList.addEventListener('click', toggleDone);
     populateList(items, itemsList);
 
     clearAll.addEventListener('click', clearList);
+    uncheckAll.addEventListener('click', uncheckList);
   </script>
 
 
