@@ -12,34 +12,40 @@
     // start with strings, numbers and booleans
     let age = 100;
     let age2 = age;
-    console.log(age, age2);
+    //console.log(age, age2);
     age = 200;
-    console.log(age, age2); // age2 was set when age = 100, therefore remains 100
+    //console.log(age, age2); // age2 was set when age = 100, therefore remains 100
 
     // same with strings, and booleans
     let name = 'Amanda';
     let name2 = name;
-    console.log(name, name2);
+    //console.log(name, name2);
     name = 'Mandy';
-    console.log(name, name2);
+    //console.log(name, name2);
 
     // Let's say we have an array
-    const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
+    const players = ['Amanda', 'Paul', 'June', 'Cora'];
 
     // and we want to make a copy of it.
+    const team = players;
+    //console.log(players, team);
 
     // You might think we can just do something like this:
-
+    //team[3] = 'Chloe';
+    //console.log(players, team);
     // however what happens when we update that array?
-
     // now here is the problem!
-
     // oh no - we have edited the original array too!
-
     // Why? It's because that is an array reference, not an array copy. They both point to the same array!
-
     // So, how do we fix this? We take a copy instead!
 
+    const team2 = players.slice(); // blank slice copies whole array
+    const team3 = [].concat(players);
+    const team4 = [...players];
+    team4[3] = "Chloe";
+    console.log(team4);
+
+    const team5 = Array.from(players);
     // one way
 
     // or create a new array and concat the old one in
