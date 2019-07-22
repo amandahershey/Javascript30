@@ -99,12 +99,21 @@
       });
     }
 
+    function checkList() {
+      items.forEach(function(i) {
+        i.done = true;
+        localStorage.setItem('items', JSON.stringify(items));
+        populateList(items, itemsList);
+      });
+    }
+
     addItems.addEventListener('submit', addItem);
     itemsList.addEventListener('click', toggleDone);
     populateList(items, itemsList);
 
     clearAll.addEventListener('click', clearList);
     uncheckAll.addEventListener('click', uncheckList);
+    checkAll.addEventListener('click', checkList);
   </script>
 
 
