@@ -193,7 +193,11 @@
       })
       .reduce((total, vidSeconds) => total + vidSeconds);
 
-
+    let secondsLeft = seconds;
+    const totalHours = Math.floor(secondsLeft / 3600);
+    secondsLeft = secondsLeft % 3600;
+    const totalMinutes = Math.floor(secondsLeft / 60);
+    const totalSeconds = secondsLeft % 60;
     //console.log(timeNodes);
     //console.log(seconds);
   </script>
