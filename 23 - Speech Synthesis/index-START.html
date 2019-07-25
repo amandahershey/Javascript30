@@ -43,8 +43,10 @@
     // populate voices
     function populateVoices() {
       voices = this.getVoices();
-      voicesDropdown.innerHTML = voices.map(voice => `<option value="${voice.name}">
-      ${voice.name} (${voice.lang})</option>`).join('');
+      voicesDropdown.innerHTML = voices
+        //.filter(voice => voice.lang.includes('en')) // filters for only english voices
+        .map(voice => `<option value="${voice.name}">${voice.name} (${voice.lang})</option>`)
+        .join('');
     }
 
     function setVoice() {
@@ -59,8 +61,16 @@
       }
     }
 
+    function setOption() {
+      msg[this.name] = this.value;
+      toggle();
+    }
+
     speechSynthesis.addEventListener('voiceschanged', populateVoices);
     voicesDropdown.addEventListener('change', setVoice);
+    options.forEach(option => option.addEventListener('change', setOption));
+    speakButton.addEventListener('click', toggle);
+    stopButton.addEventListener('click', () => toggle(false));
   </script>
 
 </body>
