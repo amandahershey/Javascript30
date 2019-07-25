@@ -5,6 +5,7 @@ const endTimeDisplay = document.querySelector('.display__end-time');
 const buttons = document.querySelectorAll('[data-time]');
 
 function timer(seconds) {
+  clearInterval(countdown);
   const now = Date.now();
   const then = now + (seconds * 1000);
   displayTimeLeft(seconds);
