@@ -11,7 +11,8 @@
 
     html {
       font-family: sans-serif;
-      background: #ffc600;
+      background-color: #FEE140;
+      background-image: linear-gradient(45deg, #FEE140 0%, #FA709A 100%);
     }
 
     .inbox {
@@ -101,7 +102,7 @@
     const checkboxes = document.querySelectorAll('.inbox input[type="checkbox"]');
     let lastPressed;
 
-    function checker(e)
+    function checker(e){
     let inside = false;
     // check if shift key is held, and checked is true
     if (e.shiftKey && this.checked) {
@@ -123,7 +124,7 @@
     // lastPressed variable is to set to the clicked checkbox
     lastPressed = this;
     }
-    checkboxes.forEach(box => box.addEventListener('click', checker));
+    checkboxes.forEach(checkbox => checkbox.addEventListener('click', checker));
   </script>
 </body>
 
