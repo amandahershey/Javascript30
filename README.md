@@ -16,7 +16,7 @@ I watched the videos and worked on my own solutions to some of the challenges be
 4.  [Array Cardio, Day 1](/Completed%20Projects/04%20-%20Array%20Cardio%20Day%201)
 5.  [Flex Panel Gallery](/Completed%20Projects/05%20-%20Flex%20Panel%20Gallery)
 6.  [Type Ahead](/Completed%20Projects/06%20-%20Type%20Ahead)
-7.  [Array Cardio, Day 2](/Completed%20Projects/04%20-%20Array%20Cardio%20Day%201)
+7.  [Array Cardio, Day 2](/Completed%20Projects/07%20-%20Array%20Cardio%20Day%202)
 8.  [Fun with HTML5 Canvas](/Completed%20Projects/08%20-%20Fun%20with%20HTML5%20Canvas)
 9.  [Dev Tools Domination](/Completed%20Projects/09%20-%20Dev%20Tools%20Domination)
 10. [Hold Shift and Check Checkboxes](/Completed%20Projects/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes)
