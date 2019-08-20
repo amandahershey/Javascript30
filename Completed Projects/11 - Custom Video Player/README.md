@@ -17,6 +17,6 @@
 
 ## CodePen
 
-CodePen had a hard time accessing and correctly displaying the video from my google docs. So just a gif instead:
+CodePen had a hard time accessing and correctly displaying the video from my google docs.
 
-![Recordit GIF](http://g.recordit.co/c8IvIXuMwG.gif)
+<img src="https://drive.google.com/uc?id=1Q2_m6HrxuqDjSgyPhBcW99_vopp7voav" />
